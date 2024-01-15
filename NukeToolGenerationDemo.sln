@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NukeToolGenerationDemo", "NukeToolGenerationDemo.csproj", "{B3647C71-53FE-498E-84F5-AA9EFD004C20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{82E5BAF9-5316-4FD4-A196-F9127EC629C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82E5BAF9-5316-4FD4-A196-F9127EC629C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E5BAF9-5316-4FD4-A196-F9127EC629C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3647C71-53FE-498E-84F5-AA9EFD004C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3647C71-53FE-498E-84F5-AA9EFD004C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3647C71-53FE-498E-84F5-AA9EFD004C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3647C71-53FE-498E-84F5-AA9EFD004C20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89B1FE1F-9982-41DA-8B6D-0B9045C0A4E0}
+	EndGlobalSection
+EndGlobal

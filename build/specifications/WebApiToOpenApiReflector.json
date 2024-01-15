@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nuke-build/nuke/master/source/Nuke.Tooling.Generator/schema.json",
+  "references": [
+    "https://raw.githubusercontent.com/valadas/WebApiToOpenApiReflector/develop/Tool/Commands.cs"
+  ],
+  "name": "WebApiToOpenApiReflector",
+  "officialUrl": "https://github.com/valadas/WebApiToOpenApiReflector",
+  "help": "A dotnet tool that can use reflection to generate OpenApi from .NetFramework assemblies.",
+  "nugetPackageId": "WebApiToOpenApiReflector",
+  "tasks": [
+    {
+      "settingsClass": {
+        "properties": [
+          {
+            "name": "AssemblyPaths",
+            "type": "string[]",
+            "help": "The assembly or assemblies to process. (Required)",
+            "required": true,
+            "format": "{value}"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -12,6 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+	<NukeSpecificationFiles Include="specifications\WebApiToOpenApiReflector.json" />
     <PackageReference Include="Nuke.Common" Version="7.0.6" />
   </ItemGroup>
 

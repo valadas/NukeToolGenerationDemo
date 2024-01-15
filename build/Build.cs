@@ -8,7 +8,9 @@ using Nuke.Common.IO;
 using Nuke.Common.ProjectModel;
 using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
+using Nuke.Common.Tools.GitVersion;
 using Nuke.Common.Tools.MSBuild;
+using Nuke.Common.Tools.NSwag;
 using Nuke.Common.Utilities.Collections;
 using static Nuke.Common.EnvironmentInfo;
 using static Nuke.Common.IO.FileSystemTasks;
@@ -74,5 +76,8 @@ class Build : NukeBuild
             // Copy assembly to artifacts directory
             var assembly = RootDirectory / "bin" / Configuration / "NukeToolGenerationDemo.dll";
             CopyFileToDirectory(assembly, ArtifactsDirectory, FileExistsPolicy.Overwrite);
+
+            WebApiToOpenApiReflectorTasks.WebApiToOpenApiReflector(s => s
+                .SetAssemblyPaths(new string[] {assembly}));
         }); 
 }

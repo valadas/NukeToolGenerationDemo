@@ -7,6 +7,7 @@
   "officialUrl": "https://github.com/valadas/WebApiToOpenApiReflector",
   "help": "A dotnet tool that can use reflection to generate OpenApi from .NetFramework assemblies.",
   "nugetPackageId": "WebApiToOpenApiReflector",
+  "packageExecutable": "WebApiToOpenApiReflector.dll",
   "tasks": [
     {
       "settingsClass": {
@@ -14,9 +15,8 @@
           {
             "name": "AssemblyPaths",
             "type": "string[]",
-            "help": "The assembly or assemblies to process. (Required)",
-            "required": true,
-            "format": "{value}"
+            "format": "{value}",
+            "help": "The assembly or assemblies to process. (Required)"
           }
         ]
       }
